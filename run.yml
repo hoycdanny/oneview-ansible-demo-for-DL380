@@ -17,7 +17,6 @@
           name: "Server Profile 94"
           serverHardwareName: "ILO"
           serverHardwareTypeName: "DL380 Gen10 1"
-          serverProfileTemplateName: "SPT1"
           localStorage: "{{ storage_cfg }}"
           bios:
             manageBios: true
