@@ -4,14 +4,15 @@ storage_cfg:
       importConfiguration: false                  
       initialize: true                            
       mode: "RAID"                                
-      logicalDrives:                              
-      - bootable: true                            
-        driveNumber: 1                            
-        driveTechnology: "SasHdd"                 
-        name: "os"                                
-        numPhysicalDrives: 2                      
-        raidLevel: "RAID1"                        
-                                                                                                 
+      logicalDrives:
+      - bootable: true
+        driveTechnology: null
+        name: "os"
+        numPhysicalDrives: 2
+        raidLevel: "RAID1"
+        sasLogicalJBODId: null
+
+
 bios_settings:                                    
 - id: "CustomPostMessage"                         
   value: "!! automate the planet !!"              
