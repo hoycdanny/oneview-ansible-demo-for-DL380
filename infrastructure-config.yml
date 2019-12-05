@@ -1,16 +1,16 @@
 storage_cfg:                                      
   controllers:                                    
-    - deviceSlot: "Embedded"                      
-      importConfiguration: false                  
-      initialize: true                            
-      mode: "RAID"                                
-      logicalDrives:
-      - bootable: true
-        driveTechnology: null
-        name: "os"
-        numPhysicalDrives: 2
-        raidLevel: "RAID1"
-        sasLogicalJBODId: null
+  - deviceSlot: "Embedded"                      
+    importConfiguration: false                  
+    initialize: true
+    driveWriteCache: "Unmanaged"    
+    mode: "Mixed"                                
+    logicalDrives:
+    - bootable: true
+      driveNumber: 1
+      name: "os"
+      numPhysicalDrives: 2
+      raidLevel: "RAID1"
 
 
 bios_settings:                                    
